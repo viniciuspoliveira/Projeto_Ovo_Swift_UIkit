@@ -153,6 +153,13 @@
                                                     <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="job-aR-1E9"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Made by Vinicius Oliveira" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHh-sf-HMZ">
+                                                <rect key="frame" x="180" y="127" width="190" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="B7D-gW-7qS" firstAttribute="centerY" secondItem="2QE-I3-YNR" secondAttribute="centerY" id="EhP-2x-bkQ"/>
