@@ -60,7 +60,7 @@ class ViewController: UIViewController {
 
         } else {
             timer.invalidate()
-            titleLabel.text = "Seu ovo ta pronto amigo! Corra pra panela!"
+            titleLabel.text = "Seu ovo ta pronto, amigo! Corra pra panela e aproveite!"
             
             let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
             player = try! AVAudioPlayer(contentsOf: url!)
