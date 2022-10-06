@@ -44,8 +44,11 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRN-uc-zM0">
                                                         <rect key="frame" x="0.0" y="0.0" width="131" height="191"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Gema Mole"/>
+                                                        <state key="normal" title="Gema Mole">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZoJ-Hg-UG6"/>
                                                         </connections>
@@ -70,8 +73,11 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd7-Ve-70Y">
                                                         <rect key="frame" x="0.0" y="0.0" width="131" height="191"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="Gema Cremosa"/>
+                                                        <state key="normal" title="Gema Cremosa">
+                                                            <color key="titleColor" red="0.63921568630000003" green="0.76470588240000004" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="hardnessSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ii-Qa-zbK"/>
                                                         </connections>
@@ -96,6 +102,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XP-hj-Wac">
                                                         <rect key="frame" x="0.0" y="0.0" width="131" height="191"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Gema Cozida"/>
                                                         <connections>
@@ -143,7 +150,7 @@
                                         <rect key="frame" x="0.0" y="602.33333333333337" width="393" height="190.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7D-gW-7qS">
-                                                <rect key="frame" x="152.33333333333334" y="78" width="88.666666666666657" height="34.333333333333343"/>
+                                                <rect key="frame" x="152.33333333333334" y="78.333333333333258" width="88.666666666666657" height="34"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Reiniciar">
                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -153,22 +160,27 @@
                                                     <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="job-aR-1E9"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Made by Vinicius Oliveira" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHh-sf-HMZ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Vinicius Oliveira" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHh-sf-HMZ">
                                                 <rect key="frame" x="180" y="127" width="190" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="KFJ-2m-dhJ"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="cHh-sf-HMZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2QE-I3-YNR" secondAttribute="leading" constant="20" symbolic="YES" id="5xK-po-aVE"/>
                                             <constraint firstItem="B7D-gW-7qS" firstAttribute="centerY" secondItem="2QE-I3-YNR" secondAttribute="centerY" id="EhP-2x-bkQ"/>
                                             <constraint firstItem="B7D-gW-7qS" firstAttribute="centerX" secondItem="2QE-I3-YNR" secondAttribute="centerX" id="G4I-yY-e1k"/>
+                                            <constraint firstAttribute="bottom" secondItem="cHh-sf-HMZ" secondAttribute="bottom" constant="42.666666666666629" id="MVs-AV-zyA"/>
+                                            <constraint firstAttribute="trailing" secondItem="cHh-sf-HMZ" secondAttribute="trailing" constant="23" id="Y7g-13-U1R"/>
+                                            <constraint firstItem="cHh-sf-HMZ" firstAttribute="top" secondItem="B7D-gW-7qS" secondAttribute="bottom" constant="14.666666666666657" id="nvC-GG-i7e"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="2QE-I3-YNR" firstAttribute="top" secondItem="96J-1l-Fpe" secondAttribute="bottom" id="BoO-em-ieQ"/>
                                     <constraint firstAttribute="bottom" secondItem="2QE-I3-YNR" secondAttribute="bottom" id="PHd-nn-lxr"/>
                                     <constraint firstItem="2QE-I3-YNR" firstAttribute="leading" secondItem="O4x-LF-9XB" secondAttribute="leading" id="UKR-8X-fJk"/>
                                     <constraint firstItem="a1V-zw-ZFA" firstAttribute="trailing" secondItem="2QE-I3-YNR" secondAttribute="trailing" id="raf-nP-jDr"/>

@@ -24,9 +24,9 @@ class ViewController: UIViewController {
     
     @IBAction func resetButton(_ sender: UIButton) {
         
-        timer.invalidate()
+        timer.invalidate() //utilizado para não deixar tempo passar
         progressBar.progress = 0.0
-        secondsPassed = 0
+        //secondsPassed = 0
         titleLabel.text = "Como você gostaria da fritura dos ovos?"
         
         
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         timer.invalidate()
         
 
-        let hardness = sender.currentTitle! //Soft, Medium, Hard
+        let hardness = sender.currentTitle! //Gema Mole, Gema Cremosa, Gema Cozida
     
         totalTime = eggTimes[hardness]!
         progressBar.progress = 0.0
